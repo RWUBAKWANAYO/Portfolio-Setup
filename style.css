@@ -1,0 +1,122 @@
+/* Import Poppins font from google* /
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Declare common styles for project */
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --dark-blue: #091e42;
+  --light-blue: #344563;
+  --lightest-blue: #7f8cff;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--poppins);
+}
+
+/* navbar styles */
+
+nav {
+  width: 80%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 76px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.navigation-container {
+  display: flex;
+}
+
+.navigation-container li {
+  list-style: none;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navigation-container li a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
+.navigation-container li a:hover {
+  color: var(--lightest-blue);
+}
+
+.navigation-container li a:focus {
+  color: var(--lightest-blue);
+}
+
+/* content styles */
+
+.main-container {
+  width: 95%;
+  min-height: 100vh;
+  margin: 40px 0;
+  background: url('./images/main_bg.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-element {
+  width: 60%;
+}
+
+.main-container h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--dark-blue);
+}
+
+.main-container p {
+  margin: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--light-blue);
+}
+
+.main-container span {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--lightest-blue);
+}
+
+.main-container ul {
+  display: flex;
+  margin-top: 5px;
+}
+
+.main-container ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+i {
+  color: #505f79;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+i:hover {
+  color: var(--lightest-blue);
+}
