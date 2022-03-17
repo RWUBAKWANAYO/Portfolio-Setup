@@ -80,10 +80,6 @@ nav {
   color: var(--menu-blue);
 }
 
-.menu-bar i:hover {
-  color: var(--lightest-blue);
-}
-
 /* content styles */
 
 .main-container {
@@ -137,13 +133,21 @@ nav {
   margin-right: 20px;
 }
 
-.main-container i ul li {
+.media-icon {
+  text-decoration: none;
+}
+
+.media-icon i {
   color: #505f79;
   font-size: var(--icon-size);
   cursor: pointer;
 }
 
-.main-container i ul li i:hover {
+.media-icon i:hover {
+  color: var(--lightest-blue);
+}
+
+.menu-bar i:hover {
   color: var(--lightest-blue);
 }
 
