@@ -15,6 +15,7 @@
   --small-size: 16px;
   --smallest-size: 15px;
   --icon-size: 22px;
+  --white-color: #fff;
 }
 
 *,
@@ -25,20 +26,22 @@ body {
 
 body {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: var(--poppins);
+  background-color: #e5e5e5;
 }
 
 /* navbar styles */
 
 nav {
-  width: 80%;
+  width: calc(100% - 20%);
+  padding: 0 10%;
   height: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--white-color);
 }
 
 .logo a {
@@ -82,11 +85,12 @@ nav {
 
 /* content styles */
 
-.main-container {
-  width: 95%;
+.intro-container {
+  width: 100%;
   min-height: 100vh;
   padding: 40px 0;
   background: url('./images/main_bg.png') no-repeat;
+  background-color: var(--white-color);
   background-size: 100% 100vh;
   background-clip: padding-box;
   background-position: top center;
@@ -100,7 +104,7 @@ nav {
   width: 70%;
 }
 
-.main-container h1 {
+.intro-container h1 {
   font-weight: 700;
   font-size: var(--large-size);
   line-height: 60px;
@@ -108,14 +112,14 @@ nav {
   letter-spacing: 0.37px;
 }
 
-.main-container p {
+.intro-container p {
   font-weight: 400;
   line-height: 28px;
   font-size: var(--medium-size);
   color: var(--light-blue);
 }
 
-.main-container span {
+.intro-container span {
   font-weight: 500;
   line-height: 24px;
   margin: 15px 0;
@@ -123,12 +127,12 @@ nav {
   color: var(--lightest-blue);
 }
 
-.main-container ul {
+.intro-container ul {
   display: flex;
   margin-top: 5px;
 }
 
-.main-container ul li {
+.intro-container ul li {
   list-style: none;
   margin-right: 20px;
 }
@@ -159,7 +163,7 @@ nav {
     --large-size: 40px;
   }
 
-  .main-container {
+  .intro-container {
     width: 100%;
   }
 
@@ -167,7 +171,7 @@ nav {
     width: 80%;
   }
 
-  .main-container h1 {
+  .intro-container h1 {
     line-height: 52px;
   }
 }
@@ -179,7 +183,11 @@ nav {
     --medium-size: 16px;
   }
 
-  nav,
+  nav {
+    width: calc(100% - 10%);
+    padding: 0 5%;
+  }
+
   .main-element {
     width: 90%;
   }
@@ -192,13 +200,14 @@ nav {
     display: block;
   }
 
-  .main-container {
+  .intro-container {
     height: auto;
     background: url('./images/mobile_bg.png') no-repeat;
+    background-color: var(--white-color);
     background-size: cover;
   }
 
-  .main-container p {
+  .intro-container p {
     line-height: 24px;
   }
 }
