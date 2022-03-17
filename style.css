@@ -1,4 +1,5 @@
-/* Import Poppins font from google* /
+/* Import Poppins font from google */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Declare common styles for project */
@@ -8,6 +9,12 @@
   --dark-blue: #091e42;
   --light-blue: #344563;
   --lightest-blue: #7f8cff;
+  --menu-blue: #6070ff;
+  --large-size: 48px;
+  --medium-size: 20px;
+  --small-size: 16px;
+  --smallest-size: 15px;
+  --icon-size: 22px;
 }
 
 *,
@@ -17,6 +24,7 @@ body {
 }
 
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,12 +35,13 @@ body {
 
 nav {
   width: 80%;
-  margin: 20px 0;
+  height: 72px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
+.logo a {
   width: 76px;
   height: 20px;
   object-fit: contain;
@@ -46,7 +55,7 @@ nav {
   list-style: none;
   margin-left: 20px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: var(--smallest-size);
 }
 
 .navigation-container li a {
@@ -62,15 +71,29 @@ nav {
   color: var(--lightest-blue);
 }
 
+.menu-bar {
+  display: none;
+}
+
+.menu-bar i {
+  font-size: 25px;
+  color: var(--menu-blue);
+}
+
+.menu-bar i:hover {
+  color: var(--lightest-blue);
+}
+
 /* content styles */
 
 .main-container {
   width: 95%;
   min-height: 100vh;
-  margin: 40px 0;
+  padding: 40px 0;
   background: url('./images/main_bg.png') no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 100vh;
+  background-clip: padding-box;
+  background-position: top center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,26 +101,29 @@ nav {
 }
 
 .main-element {
-  width: 60%;
+  width: 70%;
 }
 
 .main-container h1 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: var(--large-size);
   line-height: 60px;
   color: var(--dark-blue);
+  letter-spacing: 0.37px;
 }
 
 .main-container p {
-  margin: 10px;
   font-weight: 400;
-  font-size: 20px;
+  line-height: 28px;
+  font-size: var(--medium-size);
   color: var(--light-blue);
 }
 
 .main-container span {
   font-weight: 500;
-  font-size: 16px;
+  line-height: 24px;
+  margin: 15px 0;
+  font-size: var(--small-size);
   color: var(--lightest-blue);
 }
 
@@ -111,12 +137,62 @@ nav {
   margin-right: 20px;
 }
 
-i {
+.main-container i ul li {
   color: #505f79;
-  font-size: 22px;
+  font-size: var(--icon-size);
   cursor: pointer;
 }
 
-i:hover {
+.main-container i ul li i:hover {
   color: var(--lightest-blue);
+}
+
+/* small screens, laptops */
+
+@media (max-width: 1112px) {
+  :root {
+    --large-size: 40px;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .main-element {
+    width: 80%;
+  }
+
+  .main-container h1 {
+    line-height: 52px;
+  }
+}
+
+/* Mobile devices */
+
+@media (max-width: 637px) {
+  :root {
+    --medium-size: 16px;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  .navigation-container {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .main-container {
+    height: auto;
+    background: url('./images/mobile_bg.png') no-repeat;
+    background-size: cover;
+  }
+
+  .main-container p {
+    line-height: 24px;
+  }
 }
