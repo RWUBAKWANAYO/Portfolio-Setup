@@ -174,7 +174,8 @@ nav {
     --medium-size: 16px;
   }
 
-  nav {
+  nav,
+  .main-element {
     width: 90%;
   }
 
