@@ -135,6 +135,7 @@ nav {
 
 .media-icon {
   text-decoration: none;
+  color: transparent;
 }
 
 .media-icon i {
