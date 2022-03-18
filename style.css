@@ -194,16 +194,15 @@ header {
   height: 100%;
 }
 
-.work-desc-wrapper,
-.reversed-wrapper {
-  grid-row-start: 1;
-}
-
 .work-desc-wrapper {
   display: flex;
   flex-direction: column;
   padding: 24px;
   gap: 20px;
+}
+
+.reversed-wrapper .work-desc-wrapper {
+  grid-row-start: 1;
 }
 
 .work-desc-wrapper h2 {
@@ -339,8 +338,12 @@ header {
   color: var(--lightest-blue);
 }
 
-.about-media-link span {
+.about-media-link ul {
   display: flex;
+}
+
+.about-media-link ul li {
+  list-style: none;
 }
 
 .about-media-icon {
