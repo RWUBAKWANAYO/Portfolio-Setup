@@ -43,7 +43,7 @@ body {
 
 /* navbar styles */
 
-nav {
+header {
   width: calc(100% - 20%);
   padding: 0 10%;
   height: 72px;
@@ -131,7 +131,11 @@ nav {
   color: var(--light-blue);
 }
 
-.intro-container span {
+.intro-container button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: start;
   font-weight: 500;
   line-height: 24px;
   margin: 15px 0;
@@ -468,7 +472,7 @@ nav {
     --medium-size: 16px;
   }
 
-  nav {
+  header {
     width: calc(100% - 10%);
     padding: 0 5%;
   }
@@ -486,7 +490,9 @@ nav {
   }
 
   .intro-container {
-    height: auto;
+    height: 0;
+    min-height: 600px;
+    padding: 0;
     background: url('./images/mobile_bg.png') no-repeat;
     background-color: var(--white-color);
     background-size: cover;
