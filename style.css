@@ -1,0 +1,219 @@
+/* Import Poppins font from google */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Declare common styles for project */
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --dark-blue: #091e42;
+  --light-blue: #344563;
+  --lightest-blue: #7f8cff;
+  --menu-blue: #6070ff;
+  --large-size: 48px;
+  --medium-size: 20px;
+  --small-size: 16px;
+  --smallest-size: 15px;
+  --icon-size: 22px;
+  --white-color: #fff;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: var(--poppins);
+  background-color: var(--white-color);
+}
+
+/* navbar styles */
+
+header {
+  width: calc(100% - 20%);
+  padding: 0 10%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--white-color);
+}
+
+.logo a {
+  width: 76px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.navigation-container {
+  display: flex;
+}
+
+.navigation-container li {
+  list-style: none;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: var(--smallest-size);
+}
+
+.navigation-container li a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
+.navigation-container li a:hover {
+  color: var(--lightest-blue);
+}
+
+.navigation-container li a:focus {
+  color: var(--lightest-blue);
+}
+
+.menu-bar {
+  display: none;
+}
+
+.menu-bar i {
+  font-size: 25px;
+  color: var(--menu-blue);
+}
+
+/* content styles */
+
+.intro-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+  background: url('./images/main_bg.png') no-repeat;
+  background-color: var(--white-color);
+  background-size: 100% 100vh;
+  background-clip: padding-box;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-element {
+  width: 70%;
+}
+
+.intro-container h1 {
+  font-weight: 700;
+  font-size: var(--large-size);
+  line-height: 60px;
+  color: var(--dark-blue);
+  letter-spacing: 0.37px;
+}
+
+.intro-container p {
+  font-weight: 400;
+  line-height: 28px;
+  font-size: var(--medium-size);
+  color: var(--light-blue);
+}
+
+.intro-container button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: start;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 15px 0;
+  font-size: var(--small-size);
+  color: var(--lightest-blue);
+}
+
+.intro-container ul {
+  display: flex;
+  margin-top: 5px;
+}
+
+.intro-container ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.media-icon {
+  text-decoration: none;
+  color: transparent;
+}
+
+.media-icon i {
+  color: #505f79;
+  font-size: var(--icon-size);
+  cursor: pointer;
+}
+
+.media-icon i:hover {
+  color: var(--lightest-blue);
+}
+
+.menu-bar i:hover {
+  color: var(--lightest-blue);
+}
+
+/* small screens, laptops */
+
+@media (max-width: 1112px) {
+  :root {
+    --large-size: 40px;
+  }
+
+  .intro-container {
+    width: 100%;
+  }
+
+  .main-element {
+    width: 80%;
+  }
+
+  .intro-container h1 {
+    line-height: 52px;
+  }
+}
+
+/* Mobile devices */
+
+@media (max-width: 637px) {
+  :root {
+    --medium-size: 16px;
+  }
+
+  header {
+    width: calc(100% - 10%);
+    padding: 0 5%;
+  }
+
+  .main-element {
+    width: 90%;
+  }
+
+  .navigation-container {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .intro-container {
+    height: 0;
+    min-height: 600px;
+    padding: 0;
+    background: url('./images/mobile_bg.png') no-repeat;
+    background-color: var(--white-color);
+    background-size: cover;
+  }
+
+  .intro-container p {
+    line-height: 24px;
+  }
+}
