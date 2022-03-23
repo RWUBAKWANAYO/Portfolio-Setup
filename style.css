@@ -502,8 +502,13 @@ header {
   cursor: pointer;
 }
 
-.contact-form input [type='submit'] :hover {
+#contact-submit:hover {
   background-color: var(--lightest-blue);
+  color: var(--white-color);
+}
+
+#contact-submit:focus {
+  background-color: var(--focus-color);
   color: var(--white-color);
 }
 
