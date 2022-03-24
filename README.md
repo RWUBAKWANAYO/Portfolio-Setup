@@ -3,7 +3,7 @@
 
 > This project built to show accomplishment work.
 
-![screenshot](./images/Screenshot%20(1080).png)
+![screenshot](./images/desktop-bg.png)
 
 Portfolio is project which highlights and showcases samples of some of best work, learning progress, and academic achievement in software development.
 
