@@ -55,6 +55,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 20;
   background-color: var(--white-color);
 }
 
@@ -82,6 +83,7 @@ header {
 
 .navigation-container li a:hover {
   color: var(--lightest-blue);
+  border-bottom: 1px var(--lightest-blue) solid;
 }
 
 .navigation-container li a:focus {
@@ -108,11 +110,40 @@ header {
   background-size: 100% 100vh;
   background-clip: padding-box;
   background-position: top center;
+  border-bottom-left-radius: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 5rem;
+  overflow: hidden;
+}
+
+.intro-sub-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: intro-animation 2s ease-in-out 1;
+}
+
+@keyframes intro-animation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .main-element {
@@ -192,9 +223,15 @@ header {
   box-shadow: 0 50px 70px rgb(167, 174, 255, 0.24);
 }
 
-.work-img-wrapper img {
+.work-place-img {
   width: 100%;
   height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.work-place-img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .work-desc-wrapper {
