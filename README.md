@@ -14,7 +14,7 @@ Portfolio is project which highlights and showcases samples of some of best work
 
 ## Live Demo
 
-[127.0.0.1:5500/index.html](http://127.0.0.1:5500/index.html)
+[rwubakwanayo.github.io/Portfolio](https://rwubakwanayo.github.io/Portfolio-Setup/)
 
 ## Getting Started
 
