@@ -327,7 +327,7 @@ header {
 }
 
 .work-desc-wrapper button:focus,
-.about-media-link button :focus {
+.about-media-link button:focus {
   background-color: var(--focus-color);
   color: var(--white-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
