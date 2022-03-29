@@ -13,7 +13,7 @@
   --lighter-blue: #6b778c;
   --focus-color: #2230d2;
   --lightest-blue: #7f8cff;
-  --menu-blue: #6070ff;
+  --menu-blue: #495bff;
   --light-gray: #c1c7d0;
   --lighter-gray: #ebebff;
   --lightest-gray: #dfe1e6;
@@ -82,12 +82,12 @@ header {
 }
 
 .navigation-container li a:hover {
-  color: var(--lightest-blue);
-  border-bottom: 1px var(--lightest-blue) solid;
+  color: var(--menu-blue);
+  border-bottom: 1px var(--menu-blue) solid;
 }
 
 .navigation-container li a:focus {
-  color: var(--lightest-blue);
+  color: var(--menu-blue);
 }
 
 .menu-bar {
@@ -309,25 +309,25 @@ header {
   margin-top: 10px;
   outline: none;
   border-radius: 8px;
-  border: 1px var(--lightest-blue) solid;
+  border: 1px var(--menu-blue) solid;
   font-family: var(--poppins);
   font-size: calc(var(--small-size) - 1px);
   font-weight: 500;
   background-color: var(--white-color);
-  color: var(--lightest-blue);
+  color: var(--menu-blue);
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
 .work-desc-wrapper button:hover,
 .about-media-link button:hover {
-  background-color: var(--lightest-blue);
+  background-color: var(--menu-blue);
   color: var(--white-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .work-desc-wrapper button:focus,
-.about-media-link button :focus {
+.about-media-link button:focus {
   background-color: var(--focus-color);
   color: var(--white-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
