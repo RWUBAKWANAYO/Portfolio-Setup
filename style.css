@@ -13,7 +13,7 @@
   --lighter-blue: #6b778c;
   --focus-color: #2230d2;
   --lightest-blue: #7f8cff;
-  --menu-blue: #6070ff;
+  --menu-blue: #495bff;
   --light-gray: #c1c7d0;
   --lighter-gray: #ebebff;
   --lightest-gray: #dfe1e6;
@@ -82,12 +82,12 @@ header {
 }
 
 .navigation-container li a:hover {
-  color: var(--focus-color);
-  border-bottom: 1px var(--focus-color) solid;
+  color: var(--menu-blue);
+  border-bottom: 1px var(--menu-blue) solid;
 }
 
 .navigation-container li a:focus {
-  color: var(--focus-color);
+  color: var(--menu-blue);
 }
 
 .menu-bar {
