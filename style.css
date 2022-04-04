@@ -50,7 +50,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* navbar styles */
 
 header {
@@ -119,7 +118,6 @@ header {
   font-size: 25px;
   color: var(--menu-blue);
 }
-
 
 /* content styles */
 
@@ -472,7 +470,6 @@ header {
   margin: 12px 0;
 }
 
-
 /* element hover */
 
 .media-icon i:hover {
@@ -573,7 +570,6 @@ header {
   color: var(--white-color);
 }
 
-
 /* small screens, laptops */
 
 @media (max-width: 1112px) {
@@ -627,7 +623,6 @@ header {
     background-position: top left;
   }
 }
-
 
 /* Mobile devices */
 
