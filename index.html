@@ -11,18 +11,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="icon" href="./images/profile-bg.png" type="image/png">
-  <title>Rwubakwanayo</title>
+  <title>Rwubakwanayo's Portfolio</title>
 </head>
 
 <body>
   <header>
     <a href="index.html" class="logo"><img src="./images/logo.png" alt="my logo" /></a>
-    <ul class="navigation-container">
-      <li class=""><a href="#">Portfolio</a></li>
-      <li class=""><a href="#">About</a></li>
-      <li class=""><a href="#">Contact</a></li>
+    <ul class="navigation-container" id="navContainer">
+      <li id="closeMenu"><i class="fa-solid fa-xmark" id="closeMenuIcon"></i></li>
+      <li><a href="#work-container" class="navbarLink">Portfolio</a></li>
+      <li><a href="#about-container" class="navbarLink">About</a></li>
+      <li><a href="#contact-container" class="navbarLink">Contact</a></li>
     </ul>
-    <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+    <div id="menuBar"><i class="fa-solid fa-bars" id="menuBarIcon"></i></div>
   </header>
   <section class="intro-container">
    <div class="intro-sub-container">
@@ -55,7 +56,7 @@
     </ul>
    </div>
   </section>
-  <section class="work-container">
+  <section class="work-container" id="work-container">
     <div class="work-wrapper">
       <div class="work-sub-cont work-img-wrapper">
         <img src="./images/tonic.jpg" alt="work pictictre" class="work-place-img"/>
@@ -155,7 +156,7 @@
       </div>
     </div>
   </section>
-  <section class="about-container">
+  <section class="about-container" id="about-container">
     <div class="about-desc-wrapper">
       <h2>
         About <br /> Myself
@@ -225,7 +226,7 @@
       </ul>
     </div>
   </section>
-  <section class="contact-container">
+  <section class="contact-container" id="contact-container">
     <h2>Contact me</h2>
     <p>
       If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
@@ -237,6 +238,6 @@
       <input type="submit" value="Get It Touch" id="contact-submit" />
     </form>
   </section>
+  <script src="./script.js"></script>
 </body>
-
 </html>

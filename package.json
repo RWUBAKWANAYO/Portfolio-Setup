@@ -1,27 +1,32 @@
 {
-  "name": "hello-microverse",
+  "name": "Portfolio-Setup",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "> This project built to show accomplishment work.",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RWUBAKWANAYO/Hello-Microverse.git"
+    "url": "git+https://github.com/RWUBAKWANAYO/Portfolio-Setup.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RWUBAKWANAYO/Hello-Microverse/issues"
+    "url": "https://github.com/RWUBAKWANAYO/Portfolio-Setup/issues"
   },
-  "homepage": "https://github.com/RWUBAKWANAYO/Hello-Microverse#readme",
+  "homepage": "https://github.com/RWUBAKWANAYO/Portfolio-Setup#readme",
   "devDependencies": {
-    "hint": "^6.1.10",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "hint": "^6.1.11",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  }
+  },
+  "dependencies": {}
 }
