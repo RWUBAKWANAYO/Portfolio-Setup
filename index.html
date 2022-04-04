@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
-  <script src="./script.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,12 +18,12 @@
   <header>
     <a href="index.html" class="logo"><img src="./images/logo.png" alt="my logo" /></a>
     <ul class="navigation-container" id="navContainer">
-      <li id="closeMenu"><i class="fa-solid fa-xmark"></i></li>
+      <li id="closeMenu"><i class="fa-solid fa-xmark" id="closeMenuIcon"></i></li>
       <li><a href="#work-container" class="navbarLink">Portfolio</a></li>
       <li><a href="#about-container" class="navbarLink">About</a></li>
       <li><a href="#contact-container" class="navbarLink">Contact</a></li>
     </ul>
-    <div id="menuBar"><i class="fa-solid fa-bars"></i></div>
+    <div id="menuBar"><i class="fa-solid fa-bars" id="menuBarIcon"></i></div>
   </header>
   <section class="intro-container">
    <div class="intro-sub-container">
@@ -239,5 +238,6 @@
       <input type="submit" value="Get It Touch" id="contact-submit" />
     </form>
   </section>
+  <script src="./script.js"></script>
 </body>
 </html>
