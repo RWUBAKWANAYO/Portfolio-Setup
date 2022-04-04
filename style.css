@@ -629,6 +629,34 @@ header {
   .main-element {
     width: 90%;
   }
+
+  .navigation-container {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: rgba(79, 97, 255, 0.8);
+    backdrop-filter: blur(4px);
+    color: var(--white-color);
+    width: 100%;
+    height: calc(100vh - 20px);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation-container li {
+    margin-left: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: var(--extra-medium-size);
+  }
+  .navigation-container li a {
+    color: var(--white-color);
+  }
+  .navigation-container li a:hover {
+    color: var(--white-color);
+    border-bottom-color: var(--white-color);
+  }
+  
   #closeMenu {
     display: block;
   }
