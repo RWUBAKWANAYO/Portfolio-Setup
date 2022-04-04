@@ -74,7 +74,7 @@ header {
 
 .navigation-container {
   display: flex;
-  transition: 0.2s linear;
+  transition: none;
 }
 
 #closeMenu {
@@ -657,6 +657,7 @@ header {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+    transition: 0.2s linear;
   }
 
   .navigation-container li {
