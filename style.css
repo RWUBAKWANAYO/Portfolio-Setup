@@ -249,11 +249,6 @@ header {
   transition: 0.5s ease-in-out;
 }
 
-.work-place-img:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
 .work-desc-wrapper {
   display: flex;
   flex-direction: column;
@@ -322,7 +317,8 @@ header {
 }
 
 .work-desc-wrapper button,
-.about-media-link button {
+.about-media-link button,
+.poup-link {
   height: 48px;
   width: fit-content;
   padding: 12px;
@@ -353,6 +349,77 @@ header {
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
+.poup-header{
+
+    display: flex;
+  justify-content: space-between;
+}
+.poup-header h2 {
+  color: var(--dark-blue);
+  font-size: var(--x-medium-size);
+  font-weight: 700;
+  line-height: 52px;
+}
+#popupClose{
+font-size: 25px;
+color: var(--medium-dark-blue);
+cursor: pointer;
+height: fit-content;
+}
+#popupClose:hover{
+color: var(--menu-blue);
+}
+.poup-img{
+  width: 100%;
+
+}
+.poup-img img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+
+}
+.popup-skills-cont{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 40px;
+}
+.popup-skills-cont p{
+  color: var(--light-blue);
+  font-size: var(--small-size);
+  font-weight: 400;
+  line-height: 28px;
+
+}
+.popup-skills-badge{
+  display: flex;
+  flex-direction: column;
+}
+.popup-skills-list li {
+  list-style: none;
+  background-color: var(--lighter-gray);
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: var(--xx-small-size);
+  color: var(--menu-blue);
+  float: left;
+  margin:0 10px 10px 0;
+}
+
+.poup-link-cont{
+  float: left;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.poup-link i{
+font-size: 18px;
+margin-left: 10px;
+}
 .about-container {
   display: grid;
   gap: 24px;
@@ -602,7 +669,17 @@ header {
   .reversed-wrapper .work-desc-wrapper {
     grid-row-start: auto;
   }
+.popup-skills-cont{
 
+    grid-template-columns: auto;
+}
+.popup-skills-cont p{
+  margin-bottom: 20px;
+
+}
+.poup-link-main-cont{
+  margin-top:20px;
+}
   .about-container {
     grid-template-columns: auto;
   }

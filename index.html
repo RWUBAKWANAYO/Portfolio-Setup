@@ -26,40 +26,40 @@
     <div id="menuBar"><i class="fa-solid fa-bars" id="menuBarIcon"></i></div>
   </header>
   <section class="intro-container">
-   <div class="intro-sub-container">
+    <div class="intro-sub-container">
       <h1 class="main-element">I’m Olivier <br />Glad to see you!</h1>
-    <p class="main-element">
-      I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-    </p>
-    <button type="button" class="main-element">LET’S CONNECT</button>
-    <ul class="main-element">
-      <li>
-        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="”_blank”" class="media-icon"><i class="fa-brands fa-twitter"></i
+      <p class="main-element">
+        I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+      <button type="button" class="main-element">LET’S CONNECT</button>
+      <ul class="main-element">
+        <li>
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="”_blank”" class="media-icon"><i class="fa-brands fa-twitter"></i
 					></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/" target="”_blank”" class="media-icon"><i class="fa-brands fa-linkedin-in"></i
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="”_blank”" class="media-icon"><i class="fa-brands fa-linkedin-in"></i
 					></a>
-      </li>
-      <li>
-        <a href="https://medium.com/" target="”_blank”" class="media-icon"><i class="fa-solid fa-m"></i
+        </li>
+        <li>
+          <a href="https://medium.com/" target="”_blank”" class="media-icon"><i class="fa-solid fa-m"></i
 					></a>
-      </li>
-      <li>
-        <a href="https://github.com/" target="”_blank”" class="media-icon"><i class="fa-brands fa-github"></i
+        </li>
+        <li>
+          <a href="https://github.com/" target="”_blank”" class="media-icon"><i class="fa-brands fa-github"></i
 					></a>
-      </li>
-      <li>
-        <a href="https://angel.co/" target="”_blank”" class="media-icon"><i class="fa-brands fa-angellist"></i
+        </li>
+        <li>
+          <a href="https://angel.co/" target="”_blank”" class="media-icon"><i class="fa-brands fa-angellist"></i
 					></a>
-      </li>
-    </ul>
-   </div>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="work-container" id="work-container">
     <div class="work-wrapper">
       <div class="work-sub-cont work-img-wrapper">
-        <img src="./images/tonic.jpg" alt="work pictictre" class="work-place-img"/>
+        <img src="./images/tonic.jpg" alt="work pictictre" class="work-place-img" />
       </div>
       <div class="work-sub-cont work-desc-wrapper">
         <h2>Tonic</h2>
@@ -78,12 +78,12 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <button type="button">See Project</button>
+        <button type="button" onclick="getData(1)">See Project</button>
       </div>
     </div>
     <div class="work-wrapper reversed-wrapper">
       <div class="work-sub-cont work-img-wrapper">
-        <img src="./images/multipost.png" alt="work pictictre" class="work-place-img"/>
+        <img src="./images/multipost.png" alt="work pictictre" class="work-place-img" />
       </div>
       <div class="work-sub-cont work-desc-wrapper">
         <h2>Uber Navigation</h2>
@@ -103,12 +103,12 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <button type="button">See Project</button>
+        <button type="button" onclick="getData(2)">See Project</button>
       </div>
     </div>
     <div class="work-wrapper">
       <div class="work-sub-cont work-img-wrapper">
-        <img src="./images/tonic2.png" alt="work pictictre" class="work-place-img"/>
+        <img src="./images/tonic2.png" alt="work pictictre" class="work-place-img" />
       </div>
       <div class="work-sub-cont work-desc-wrapper">
         <h2>Facebook 360</h2>
@@ -127,12 +127,12 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <button type="button">See Project</button>
+        <button type="button" onclick="getData(3)">See Project</button>
       </div>
     </div>
     <div class="work-wrapper reversed-wrapper">
       <div class="work-sub-cont work-img-wrapper">
-        <img src="./images/art.png" alt="work pictictre" class="work-place-img"/>
+        <img src="./images/art.png" alt="work pictictre" class="work-place-img" />
       </div>
       <div class="work-sub-cont work-desc-wrapper">
         <h2>Multi-Post Stories</h2>
@@ -152,7 +152,52 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <button type="button">See Project</button>
+        <button type="button" onclick="getData(4)" id="poupButton">See Project</button>
+      </div>
+    </div>
+    <div class="poup-container" id="popupContainer">
+      <div class="poup-wrapper">
+        <div class="poup-sub-wrapper">
+          <div class="poup-header">
+            <div>
+              <h2 id="popupTitle"></h2>
+              <div class="work-desc-wrapper-div">
+                <span class="work-desc-wrapper-position work-desc-wrapper-item"id="popupPlace"></span>
+                <i></i>
+                <span class="work-desc-wrapper-item" id="popupPosition"></span>
+                <i></i>
+                <span class="work-desc-wrapper-item" id="popupPeriod"></span>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark" id="popupClose"></i>
+          </div>
+          <div class="poup-img"><img src="./images/art.png" alt="work pictictre" class="work-place-img" id="popupImage"/></div>
+          <div class="popup-skills-cont">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is
+              simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text
+              of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+            </p>
+            <div class="popup-skills-badge">
+              <ul class="popup-skills-list" id="popupSkills"></ul>
+              <div class="poup-link-main-cont">
+                <a href="https://rwubakwanayo.github.io/Portfolio-Setup/" target="_blank" class="poup-link-cont">
+                  <button type="button" class="poup-link">
+                See live
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </button>
+                </a>
+                <a href="https://github.com/RWUBAKWANAYO/Portfolio-Setup" target="_blank" class="poup-link-cont">
+                  <button type="button" class="poup-link">
+                See Source
+                <i class="fa-brands fa-github"></i>
+              </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -234,10 +279,11 @@
     <form class="contact-form" action="https://formspree.io/f/xayvbzrj" method="post">
       <input type="text" placeholder="Enter your name" name="name" maxlength="30" required />
       <input type="email" placeholder="Enter your email" name="email" required />
-      <textarea rows="10" maxlength="500" placeholder="Write your message here" name="message" required ></textarea>
+      <textarea rows="10" maxlength="500" placeholder="Write your message here" name="message" required></textarea>
       <input type="submit" value="Get It Touch" id="contact-submit" />
     </form>
   </section>
   <script src="./script.js"></script>
 </body>
+
 </html>
