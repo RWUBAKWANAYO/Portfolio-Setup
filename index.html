@@ -152,47 +152,42 @@
           <li>css</li>
           <li>javaScript</li>
         </ul>
-        <button type="button" onclick="getData(4)" id="poupButton">See Project</button>
+        <button type="button" onclick="getData(4)" id="popupButton">See Project</button>
       </div>
     </div>
-    <div class="poup-container" id="popupContainer">
-      <div class="poup-wrapper">
-        <div class="poup-sub-wrapper">
-          <div class="poup-header">
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-wrapper">
+        <div class="popup-sub-wrapper">
+          <div class="popup-header">
             <div>
-              <h2 id="popupTitle"></h2>
+              <h2 id="popupTitle">Title</h2>
               <div class="work-desc-wrapper-div">
-                <span class="work-desc-wrapper-position work-desc-wrapper-item"id="popupPlace"></span>
+                <span class="work-desc-wrapper-position work-desc-wrapper-item" id="popupPlace">Place</span>
                 <i></i>
-                <span class="work-desc-wrapper-item" id="popupPosition"></span>
+                <span class="work-desc-wrapper-item" id="popupPosition">Position</span>
                 <i></i>
-                <span class="work-desc-wrapper-item" id="popupPeriod"></span>
+                <span class="work-desc-wrapper-item" id="popupPeriod">Period</span>
               </div>
             </div>
             <i class="fa-solid fa-xmark" id="popupClose"></i>
           </div>
-          <div class="poup-img"><img src="./images/art.png" alt="work pictictre" class="work-place-img" id="popupImage"/></div>
+          <div class="popup-img"><img src="./images/art.png" alt="work pictictre" class="work-place-img" id="popupImage" /></div>
           <div class="popup-skills-cont">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-            </p>
+            <p id="popupDescription"></p>
             <div class="popup-skills-badge">
-              <ul class="popup-skills-list" id="popupSkills"></ul>
-              <div class="poup-link-main-cont">
-                <a href="https://rwubakwanayo.github.io/Portfolio-Setup/" target="_blank" class="poup-link-cont">
-                  <button type="button" class="poup-link">
+              <ul id="popupSkills"></ul>
+              <div class="popup-link-main-cont">
+                <a href="#" target="_blank" class="popup-link-cont" id="liveDemo">
+                  <span class="popup-link">
                 See live
                 <i class="fa-solid fa-up-right-from-square"></i>
-              </button>
+              </span>
                 </a>
-                <a href="https://github.com/RWUBAKWANAYO/Portfolio-Setup" target="_blank" class="poup-link-cont">
-                  <button type="button" class="poup-link">
-                See Source
-                <i class="fa-brands fa-github"></i>
-              </button>
+                <a href="#" target="_blank" class="popup-link-cont" id="sourceCode">
+                  <span class="popup-link">
+                <span>See Source</span>
+                  <i class="fa-brands fa-github"></i>
+                  </span>
                 </a>
               </div>
             </div>
