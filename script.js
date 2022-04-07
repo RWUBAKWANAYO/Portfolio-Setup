@@ -170,6 +170,15 @@ const storeData = (data) => {
   return data;
 };
 
+const getStoredData = () => {
+  const storageData = localStorage.getItem('contactInfo');
+  if (!storageData) return;
+  const data = JSON.parse(storageData);
+  contactFormCont.name.value = data.name;
+  contactFormCont.email.value = data.email;
+  contactFormCont.message.value = data.message;
+};
+
 // Form validation
 
 contactFormCont.addEventListener('submit', (event) => {
@@ -189,5 +198,6 @@ contactFormCont.addEventListener('submit', (event) => {
 
 window.addEventListener('load', () => {
   workContainer.innerHTML = getWorkData;
+  getStoredData();
   return workContainer;
 });
