@@ -4,6 +4,7 @@ const closeMenu = document.getElementById('closeMenu');
 const navbarLink = document.querySelectorAll('.navbarLink');
 const workContainer = document.getElementById('workContainer');
 const popupContainer = document.getElementById('popupContainer');
+const contactFormCont = document.getElementById('contactFormCont');
 
 // Menu toggle actions
 
@@ -159,18 +160,24 @@ const closePopupFunc = (status) => {
   document.body.style.overflow = 'scroll';
   popupContainer.style.transform = 'translate(0%,0%) scale(0)';
 };
-window.addEventListener('load', () => {
-  workContainer.innerHTML = getWorkData;
-  return workContainer;
-});
 closePopupFunc(null);
 popupDetailsFunc(null);
 
+// preserve data in the browser
+
+const storeData = (data) => {
+  localStorage.setItem('contactInfo', JSON.stringify(data));
+  return data;
+};
+
 // Form validation
 
-const contactFormCont = document.getElementById('contactFormCont');
 contactFormCont.addEventListener('submit', (event) => {
+  const nameInput = contactFormCont.name.value;
   const emailInput = contactFormCont.email.value;
+  const textAreaVal = contactFormCont.message.value;
+  const data = { name: nameInput, email: emailInput, message: textAreaVal };
+  storeData(data);
   if (emailInput.toLowerCase() !== emailInput) {
     event.preventDefault();
     const errorTag = contactFormCont.getElementsByTagName('small');
@@ -178,4 +185,9 @@ contactFormCont.addEventListener('submit', (event) => {
   } else {
     contactFormCont.action = 'https://formspree.io/f/xayvbzrj';
   }
+});
+
+window.addEventListener('load', () => {
+  workContainer.innerHTML = getWorkData;
+  return workContainer;
 });
