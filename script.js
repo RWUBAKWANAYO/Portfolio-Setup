@@ -165,3 +165,17 @@ window.addEventListener('load', () => {
 });
 closePopupFunc(null);
 popupDetailsFunc(null);
+
+// Form validation
+
+const contactFormCont = document.getElementById('contactFormCont');
+contactFormCont.addEventListener('submit', (event) => {
+  const emailInput = contactFormCont.email.value;
+  if (emailInput.toLowerCase() !== emailInput) {
+    event.preventDefault();
+    const errorTag = contactFormCont.getElementsByTagName('small');
+    errorTag[0].innerHTML = 'Please insert email address in lowercase!';
+  } else {
+    contactFormCont.action = 'https://formspree.io/f/xayvbzrj';
+  }
+});
