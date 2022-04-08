@@ -22,7 +22,7 @@ const details = [
     place: 'CANOPY',
     position: 'Back End Dev',
     period: '2015',
-    skills: ['html', 'css', 'javaScript'],
+    skils: ['html', 'css', 'javaScript'],
     image: './images/tonic.jpg',
     live_demo: 'https://rwubakwanayo.github.io/Portfolio-Setup/',
     source_code: 'https://github.com/RWUBAKWANAYO/Portfolio-Setup',
@@ -58,7 +58,7 @@ const details = [
     place: 'FACEBOOK',
     position: 'Full Stack Dev',
     period: '2015',
-    skills: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    skils: ['html', 'Ruby on rails', 'css', 'javaScript'],
     image: './images/art.png',
     live_demo: 'https://rwubakwanayo.github.io/Portfolio-Setup/',
     source_code: 'https://github.com/RWUBAKWANAYO/Portfolio-Setup',
@@ -106,7 +106,7 @@ const getWorkData = details.map((item, index) => {
   return content;
 });
 const popupDetailsFunc = (cardId) => {
-  if (cardId === null) return;
+  if (cardId !== null) return;
   let item = details.filter((el) => el.id === cardId);
   item = item.shift();
   const skillsList = item.skills.map((list) => `<li>${list}</li>`).join('');
